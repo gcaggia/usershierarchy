@@ -8,6 +8,8 @@ authors:
 #   Short description of UsersHierarchy
 
 dependencies:
+  spec-kemal:
+    github: kemalcr/spec-kemal
   kemal:
     github: kemalcr/kemal
 
