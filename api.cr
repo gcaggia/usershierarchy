@@ -7,10 +7,7 @@ get "/api/home/" do |env|
 end
 
 get "/api/get-subordinates/:user_id" do |env|
-  users = Array(User).from_json(File.read("data/users.json"))
-  roles = Array(Role).from_json(File.read("data/roles.json"))
-  organisation = Organisation.new users, roles
-  
+  organisation = Organisation.new usersFilePath: "data/users.json", rolesFilePath: "data/roles.json"
   env.response.content_type = "application/json"
   userId = env.params.url["user_id"].to_i
   organisation.getSubordinates(userId).to_json
