@@ -24,7 +24,7 @@ class Organisation
   private property users : Array(User)
   private property roles : Array(Role)
 
-  def initialize(usersFilePath :  String, rolesFilePath : String)
+  def initialize(usersFilePath : String, rolesFilePath : String)
     @users = Array(User).from_json(File.read(usersFilePath))
     @roles = Array(Role).from_json(File.read(rolesFilePath))
   end

@@ -3,7 +3,7 @@ require "./solution"
 
 get "/api/home/" do |env|
   env.response.content_type = "application/json"
-  {"Hello From Server"}.to_json
+  "Hello From Server".to_json
 end
 
 get "/api/get-subordinates/:user_id" do |env|
