@@ -1,6 +1,6 @@
 # User Hierarchy
 
-Developed with [Crystal](https://crystal-lang.org/), a new langage inspired by Ruby and extremely fast like C/C++ code.
+Developed with [Crystal](https://crystal-lang.org/), a new language inspired by Ruby and extremely fast like C/C++ code.
 
 Run as an API, thanks to [Kemal](http://kemalcr.com/), a powerful, simple and sinatra-like framework.
 
