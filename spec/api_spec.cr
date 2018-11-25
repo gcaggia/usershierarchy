@@ -2,8 +2,6 @@ require "json"
 require "spec-kemal"
 require "../api"
 
-ENV["config_env"] = "test"
-
 describe "api" do
 
   it "responds to /api/home/" do

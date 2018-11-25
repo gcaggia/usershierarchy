@@ -15,4 +15,4 @@ get "/api/get-subordinates/:user_id" do |env|
   organisation.getSubordinates(userId).to_json
 end
 
-Kemal.run 8080
+Kemal.run ARGV[0]?.try &.to_i? || 8080
