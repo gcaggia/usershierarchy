@@ -103,7 +103,7 @@ It will start a couple of automatic tests to see if everything is fine. Examples
 
 ## Performance
 
-In production, The api responds in 150 µs in average. It runs in a docker container on a litle compute engine (shared cpu with 0.6 go of ram). OS is docker optimized by Google.
+In production, The api responds in 150 µs in average. It runs in a docker container on a small compute engine (shared cpu with 0.6 go of ram). OS is docker optimized by Google.
 
 150 µs to get an incoming request, parse a JSON file, apply an algorithm and send a response. 
 
